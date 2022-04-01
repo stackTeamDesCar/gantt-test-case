@@ -1,0 +1,6 @@
+@import "~@bryntum/gantt/gantt.classic-dark.css";
+
+.gantt-wrapper-container {
+  padding: 1rem;
+  height: 500px;
+}
