@@ -6,23 +6,6 @@ import { BryntumGantt } from "@bryntum/gantt-react";
 import "./index.css";
 
 
-const schedConfig = {
-  // readOnly: true,
-  // eventTooltip: { tooltip: { disabled: true } },
-  // features: {
-  // taskEdit: false,
-  // regionResize: true,
-  // cellEdit: false,
-  // tree: {
-  //   expandOnCellClick: true,
-  // },
-  // },
-  // subGridConfigs: {
-  //   locked: { width: 200 },
-  // },
-  // viewPreset: "dayAndMonth",
-};
-
 const Gantt = () => {
   const [chart, setChart] = useState();
 
