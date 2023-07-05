@@ -1,6 +1,10 @@
-@import "~@bryntum/gantt/gantt.classic-dark.css";
+@import "~@bryntum/schedulerpro/schedulerpro.classic-dark.css";
 
-.gantt-wrapper-container {
+.scheduler-wrapper-container {
   padding: 1rem;
   height: 500px;
+}
+
+h6 {
+  cursor: pointer;
 }
