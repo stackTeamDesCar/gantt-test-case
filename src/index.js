@@ -3,12 +3,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./i18n";
-import ReactDOM from 'react-dom';
-
+import ReactDOM from "react-dom";
+import Theme from "./components/Theme";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Theme>
+      <App />
+    </Theme>
   </React.StrictMode>,
   document.getElementById("root")
 );

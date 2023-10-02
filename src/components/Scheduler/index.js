@@ -1,11 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 
 //import from gantt-react as workaround to use both gantt and scheduler
 import { BryntumSchedulerPro } from "@bryntum/gantt-react";
 
-import { onSchedulerResourceClick } from "./helpers";
-import "./index.css";
 import { events, resources } from "./mock";
+import "./index.scss";
 
 const columns = [
   {
@@ -59,7 +58,6 @@ const conf = {
 
 const Scheduler = () => {
   const schedulerRef = useRef();
-  const [idResource, setIdResource] = useState();
 
   return (
     <div className="scheduler-wrapper-container">
@@ -71,14 +69,6 @@ const Scheduler = () => {
         events={events}
         endDate="2023-08-14T10:30:00Z"
         startDate="2023-07-07T14:00:00Z"
-        onCellClick={(event) =>
-          onSchedulerResourceClick({
-            event,
-            idResource,
-            setIdResource,
-            schedulerRef: schedulerRef.current,
-          })
-        }
       />
     </div>
   );

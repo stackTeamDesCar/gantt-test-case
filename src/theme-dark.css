@@ -1,0 +1,7 @@
+@import "~@bryntum/schedulerpro/schedulerpro.classic-dark.css";
+@import "~@ag-grid-community/core/dist/styles/ag-theme-alpine-dark.min.css";
+
+:root {
+  --ag-theme: ag-theme-alpine-dark;
+  --login-background-color: #525252;
+}

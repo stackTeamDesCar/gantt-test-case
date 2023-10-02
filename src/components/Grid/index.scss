@@ -1,0 +1,116 @@
+.ag-grid-table {
+  width: 100%;
+  > div,
+  .ag-root-wrapper {
+    height: 100%;
+    min-height: inherit;
+  }
+}
+
+.ag-grid-table {
+  font-family: Montserrat, 'sans-serif';
+}
+
+.header-group {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 2rem;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-search {
+  flex: 1;
+}
+.header-overflowmenu {
+  margin: 8px;
+}
+.header-toggle {
+  display: contents;
+}
+
+.header-search .bx--search-input {
+  color: black;
+}
+
+.header-search .bx--search-close svg {
+  fill: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.my-chart {
+  flex-grow: 6;
+  height: 50rem;
+  display: flex;
+}
+
+.pinning-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.row-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.ag-overlay-no-rows-center {
+  padding-top: 2.5em;
+}
+
+.ag-layout-auto-height .ag-center-cols-clipper,
+.ag-layout-auto-height .ag-center-cols-container {
+  min-height: 42px !important;
+}
+
+.ag-theme-alpine,
+.ag-theme-alpine-dark {
+  font-family: 'Montserrat', 'sans-serif' !important;
+}
+
+.bx--toolbar-action.bx--toolbar-search-container-expandable {
+  height: 100%;
+}
+
+@media (min-width: 40rem) and (max-width: 66rem) {
+  .ag-grid-table-header {
+    // height: 2.5rem !important;
+
+    .header-search > div.bx--toolbar-content.search-toolbar {
+      height: 2.5rem !important;
+    }
+  }
+}
+
+@media (min-width: 20rem) and (max-width: 40rem) {
+  .ag-grid-table-header {
+    // height: 2rem !important;
+
+    .header-search > div.bx--toolbar-content.search-toolbar {
+      height: 2rem !important;
+    }
+  }
+}
+
+// Set the maximum height for the table when the element has this class
+$default-row-height: 50px;
+$default-rows-to-show: 10;
+
+.max-height-with-scroll {
+  .ag-body-viewport {
+    // The height, calculated as the total height of 10 rows, is applied to the body of the table and scrolling is enabled
+    max-height: calc(#{$default-row-height} * #{$default-rows-to-show});
+    overflow-y: scroll;
+  }
+}
